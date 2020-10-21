@@ -4,10 +4,10 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
-@Ignore
 public class WinTest {
+
     @Test
     public void whenVerticalWin() {
         int[][] board = {
@@ -36,8 +36,8 @@ public class WinTest {
     public void whenNotWin() {
         int[][] board = {
                 {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0},
-                {1, 1, 1, 1, 1},
+                {0, 1, 0, 0, 0},
+                {1, 1, 0, 1, 1},
                 {0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0},
         };
